@@ -28,14 +28,15 @@ public class LoginPage  {
     WebElement btnLogout;
     public void setUserName(String uname) throws InterruptedException {
 
-        txtEmail.clear();;
-        txtEmail.sendKeys(uname);
+        txtEmail.clear();
         Thread.sleep(3000);
+        txtEmail.sendKeys(uname);
     }
     public void setPassword(String pwd) throws InterruptedException {
         txtPassword.clear();
-        txtPassword.sendKeys(pwd);
         Thread.sleep(3000);
+        txtPassword.sendKeys(pwd);
+
     }
     public void clickLogin() throws InterruptedException {
         btnLogin.click();

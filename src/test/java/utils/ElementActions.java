@@ -8,7 +8,7 @@ import java.time.Duration;
 
 import java.util.List;
 public class ElementActions  {
-    public  WebDriver driver;
+    public WebDriver driver;
     public ElementActions(WebDriver driver)
     {
         this.driver=driver;
@@ -38,6 +38,7 @@ public class ElementActions  {
         return getElement(locator).isDisplayed();
     }
     public void doEnterValue(By locator,String value) throws InterruptedException {
+        getElement(locator).clear();
         Thread.sleep(2000);
         getElement(locator).sendKeys(value);
     }
