@@ -21,7 +21,7 @@ public class SecondClass {
         System.out.println(result);
         System.out.println(myCharacter);
     }
-    public static boolean prokriya(int firstValue,int secondValue)
+    public static boolean prokriya(int firstValue, int secondValue)
     {
         boolean answer=firstValue>secondValue;
         return answer;
