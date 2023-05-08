@@ -13,10 +13,9 @@ public class TestProductPage extends BaseEnv {
     {
         driver.get("http://teststore.automationtesting.co.uk/");
         Thread.sleep(2000);
-        ProductPage pp=new ProductPage(driver);
-        pp.product_one_click();
+        ProductPage.product_one_click();
         Thread.sleep(2000);
-        String get_title=pp.product_one_title();
+        String get_title=ProductPage.product_one_title();
         Assert.assertEquals(get_title,"HUMMINGBIRD PRINTED T-SHIRT");
         Thread.sleep(2000);
     }
