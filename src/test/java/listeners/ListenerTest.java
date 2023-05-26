@@ -1,14 +1,17 @@
 package listeners;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.devtools.v110.page.Page;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -23,9 +26,11 @@ public class ListenerTest implements ITestListener {
     ExtentSparkReporter htmlReporter;
     ExtentReports reports;
     ExtentTest test;
+
+
     public void configureReport()
     {
-        htmlReporter=new ExtentSparkReporter("ExtentListenerReport.html");
+        htmlReporter=new ExtentSparkReporter("Extent_report"+"/test-report/ExtentListenerReport.html");
         reports=new ExtentReports();
         reports.attachReporter(htmlReporter);
         //add system information
@@ -56,6 +61,11 @@ public class ListenerTest implements ITestListener {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+
+
+
+
     }
     public void onTestFailure(ITestResult result) {
 

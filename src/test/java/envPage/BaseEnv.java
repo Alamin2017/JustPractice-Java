@@ -10,15 +10,13 @@ import org.testng.annotations.BeforeMethod;
 import java.time.Duration;
 public class BaseEnv {
     public static WebDriver driver;
-    public static String browser="chrome";
+    public static String browser="Chrome";
     @BeforeMethod
     public void setup()
     {
         switch (browser)
         {
-            case "chrome":
-                ChromeOptions ops = new ChromeOptions();
-//                ops.addArguments("--remote-allow-origins=*");
+            case "Chrome":
                 WebDriverManager.chromedriver().setup();
                 driver=new ChromeDriver();
                 break;

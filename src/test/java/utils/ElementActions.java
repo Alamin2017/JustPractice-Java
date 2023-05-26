@@ -26,7 +26,7 @@ public class ElementActions extends BaseEnv {
         getElement(locator).click();
         Thread.sleep(2000);
     }
-    public static String get_text_Element(By locator) throws InterruptedException {
+    public static String get_Text(By locator) throws InterruptedException {
         Thread.sleep(2000);
         return getElement(locator).getText();
     }

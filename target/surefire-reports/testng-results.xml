@@ -2,46 +2,46 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="209483" started-at="2023-05-03T20:20:45 BDT" finished-at="2023-05-03T20:24:15 BDT">
+  <suite name="Command line suite" duration-ms="34667" started-at="2023-05-15T23:50:34 BDT" finished-at="2023-05-15T23:51:08 BDT">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="209483" started-at="2023-05-03T20:20:45 BDT" finished-at="2023-05-03T20:24:15 BDT">
+    <test name="Command line test" duration-ms="34667" started-at="2023-05-15T23:50:34 BDT" finished-at="2023-05-15T23:51:08 BDT">
       <class name="testCases.TestLogin">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.TestLogin@79e2c065]" name="setup" is-config="true" duration-ms="11933" started-at="2023-05-03T20:20:45 BDT" finished-at="2023-05-03T20:20:57 BDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.TestLogin@79e2c065]" name="setup" is-config="true" duration-ms="4060" started-at="2023-05-15T23:50:34 BDT" finished-at="2023-05-15T23:50:38 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="LoginTest()[pri:0, instance:testCases.TestLogin@79e2c065]" name="LoginTest" duration-ms="158905" started-at="2023-05-03T20:20:58 BDT" finished-at="2023-05-03T20:23:37 BDT">
+        <test-method status="PASS" signature="LoginTest()[pri:0, instance:testCases.TestLogin@79e2c065]" name="LoginTest" duration-ms="6558" started-at="2023-05-15T23:50:38 BDT" finished-at="2023-05-15T23:50:44 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.TestLogin@79e2c065]" name="teardown" is-config="true" duration-ms="110" started-at="2023-05-03T20:23:37 BDT" finished-at="2023-05-03T20:23:37 BDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.TestLogin@79e2c065]" name="teardown" is-config="true" duration-ms="164" started-at="2023-05-15T23:50:44 BDT" finished-at="2023-05-15T23:50:45 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.TestLogin@79e2c065]" name="setup" is-config="true" duration-ms="1658" started-at="2023-05-03T20:23:37 BDT" finished-at="2023-05-03T20:23:38 BDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.TestLogin@79e2c065]" name="setup" is-config="true" duration-ms="1664" started-at="2023-05-15T23:50:45 BDT" finished-at="2023-05-15T23:50:46 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="ePassportTest()[pri:0, instance:testCases.TestLogin@79e2c065]" name="ePassportTest" duration-ms="11692" started-at="2023-05-03T20:23:38 BDT" finished-at="2023-05-03T20:23:50 BDT">
+        <test-method status="PASS" signature="PassportTest()[pri:0, instance:testCases.TestLogin@79e2c065]" name="PassportTest" duration-ms="3140" started-at="2023-05-15T23:50:46 BDT" finished-at="2023-05-15T23:50:49 BDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ePassportTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.TestLogin@79e2c065]" name="teardown" is-config="true" duration-ms="96" started-at="2023-05-03T20:23:50 BDT" finished-at="2023-05-03T20:23:50 BDT">
+        </test-method> <!-- PassportTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.TestLogin@79e2c065]" name="teardown" is-config="true" duration-ms="139" started-at="2023-05-15T23:50:49 BDT" finished-at="2023-05-15T23:50:49 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TestLogin -->
       <class name="testCases.TestProductPage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.TestProductPage@130d63be]" name="setup" is-config="true" duration-ms="1597" started-at="2023-05-03T20:23:50 BDT" finished-at="2023-05-03T20:23:52 BDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.TestProductPage@130d63be]" name="setup" is-config="true" duration-ms="1812" started-at="2023-05-15T23:50:49 BDT" finished-at="2023-05-15T23:50:51 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="test_product()[pri:1, instance:testCases.TestProductPage@130d63be]" name="test_product" duration-ms="22783" started-at="2023-05-03T20:23:52 BDT" finished-at="2023-05-03T20:24:15 BDT">
+        <test-method status="PASS" signature="test_product()[pri:1, instance:testCases.TestProductPage@130d63be]" name="test_product" duration-ms="16711" started-at="2023-05-15T23:50:51 BDT" finished-at="2023-05-15T23:51:08 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_product -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.TestProductPage@130d63be]" name="teardown" is-config="true" duration-ms="127" started-at="2023-05-03T20:24:15 BDT" finished-at="2023-05-03T20:24:15 BDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.TestProductPage@130d63be]" name="teardown" is-config="true" duration-ms="147" started-at="2023-05-15T23:51:08 BDT" finished-at="2023-05-15T23:51:08 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

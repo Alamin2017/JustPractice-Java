@@ -10,7 +10,7 @@ public class ProductPage extends ElementActions {
     }
     public static By title_product1=By.xpath("//*[@id=\"main\"]/div[1]/div[2]/h1");
     public static String product_one_title() throws InterruptedException {
-        return ElementActions.get_text_Element(title_product1);
+        return ElementActions.get_Text(title_product1);
     }
 
 
