@@ -1,5 +1,4 @@
 package envPage;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -16,15 +15,15 @@ public class BaseEnv {
         switch (browser)
         {
             case "Chrome":
-                WebDriverManager.chromedriver().setup();
+//                WebDriverManager.chromedriver().setup();
                 driver=new ChromeDriver();
                 break;
             case "Edge":
-                WebDriverManager.edgedriver().setup();
+//                WebDriverManager.edgedriver().setup();
                 driver=new EdgeDriver();
                 break;
             case "ie":
-                WebDriverManager.iedriver().setup();
+//                WebDriverManager.iedriver().setup();
                 driver=new InternetExplorerDriver();
                 break;
         }

@@ -1,12 +1,9 @@
 package testCases;
-
 import envPage.BaseEnv;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.ProductPage;
-
-
 public class TestProductPage extends BaseEnv {
 
     @Test(priority = 1)

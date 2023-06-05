@@ -1,14 +1,14 @@
 package utils;
-
 import envPage.BaseEnv;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
-
 import java.util.List;
-public class ElementActions extends BaseEnv {
+
+import static envPage.BaseEnv.driver;
+
+public class ElementActions  {
 
     public static WebElement getElement(By locator)
     {
@@ -39,5 +39,4 @@ public class ElementActions extends BaseEnv {
         Thread.sleep(2000);
         getElement(locator).sendKeys(value);
     }
-
 }

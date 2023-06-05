@@ -1,9 +1,8 @@
 package pageObjects;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import utils.ElementActions;
 
-public class ProductPage extends ElementActions {
+public class ProductPage  {
 
     public static By product=By.xpath("//img[@alt='Hummingbird printed t-shirt']");
     public static void product_one_click() throws InterruptedException {
