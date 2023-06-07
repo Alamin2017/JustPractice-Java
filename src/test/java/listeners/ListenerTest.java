@@ -21,18 +21,15 @@ public class ListenerTest implements ITestListener {
     ExtentSparkReporter htmlReporter;
     ExtentReports reports;
     ExtentTest test;
-
-
-    public void configureReport()
-    {
-        htmlReporter=new ExtentSparkReporter("Extent_report"+"/test-report/ExtentListenerReport.html");
-        reports=new ExtentReports();
+    public void configureReport() {
+        htmlReporter = new ExtentSparkReporter("Extent_report" + "/test-report/ExtentListenerReport.html");
+        reports = new ExtentReports();
         reports.attachReporter(htmlReporter);
         //add system information
-        reports.setSystemInfo("Machine","Lenovo");
-        reports.setSystemInfo("OS","10");
-        reports.setSystemInfo("Browser","Chrome");
-        reports.setSystemInfo("User","Al-Amin");
+        reports.setSystemInfo("Machine", "Lenovo");
+        reports.setSystemInfo("OS", "10");
+        reports.setSystemInfo("Browser", "Chrome");
+        reports.setSystemInfo("User", "Al-Amin");
         //configuration to change look
         htmlReporter.config().setDocumentTitle("Extent Reporter Report");
         htmlReporter.config().setReportName("This is an ExtentTest Report");
@@ -43,55 +40,38 @@ public class ListenerTest implements ITestListener {
         System.out.println("On Start method invoked");
     }
     public void onTestSuccess(ITestResult result) {
-        System.out.println("Name of test method successfully executed:"+result.getName());
-        test=reports.createTest(result.getName());
-        test.log(Status.PASS, MarkupHelper.createLabel("Name of the passed test case is:"+result.getName() , ExtentColor.GREEN));
-
-//        File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//        String time = new SimpleDateFormat("dd-MM-yyyy-hh-mm-ss-aa").format(new Date());
-//        String fileWithPath = "./src/test/resources/screenshots/success/pass" + time + ".png";
-//        File DestFile = new File(fileWithPath);
-//        try {
-//            FileUtils.copyFile(screenshotFile, DestFile);
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
+        System.out.println("Name of test method successfully executed:" + result.getName());
+        test = reports.createTest(result.getName());
+        test.log(Status.PASS, MarkupHelper.createLabel("Name of the passed test case is:" + result.getName(), ExtentColor.GREEN));
     }
     public void onTestFailure(ITestResult result) {
-
-        System.out.println("Name of test method not executed"+result.getName());
-        test=reports.createTest(result.getName());
-        test.log(Status.FAIL, MarkupHelper.createLabel("Name of the failed test case is:"+result.getName() , ExtentColor.RED));
-        try {
-            test.log(Status.FAIL, test.addScreenCaptureFromPath(screenshot(driver)).toString());
-        } catch (IOException e) {
+        System.out.println("Name of test method not executed" + result.getName());
+        test = reports.createTest(result.getName());
+        String testName=result.getName();
+        test.log(Status.FAIL, MarkupHelper.createLabel("Name of the failed test case is:" + result.getName(), ExtentColor.RED));
+        try
+        {
+            test.addScreenCaptureFromPath(takeScreenshot(driver,testName));
+        }
+        catch (IOException e)
+        {
             throw new RuntimeException(e);
         }
-//        File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//        String time = new SimpleDateFormat("dd-MM-yyyy-hh-mm-ss-aa").format(new Date());
-//        String fileWithPath = "./src/test/resources/screenshots/failures/fail" + time + ".png";
-//        File DestFile = new File(fileWithPath);
-//        try {
-//            FileUtils.copyFile(screenshotFile, DestFile);
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-
     }
     public void onTestSkipped(ITestResult result) {
-        System.out.println("Name of test method skipped"+result.getName());
-        test=reports.createTest(result.getName());
-        test.log(Status.SKIP, MarkupHelper.createLabel("Name of the skipped test case is:"+result.getName() ,ExtentColor.YELLOW));
+        System.out.println("Name of test method skipped" + result.getName());
+        test = reports.createTest(result.getName());
+        test.log(Status.SKIP, MarkupHelper.createLabel("Name of the skipped test case is:" + result.getName(), ExtentColor.YELLOW));
     }
     public void onFinish(ITestContext context) {
         System.out.println("On Finish method invoked");
         reports.flush();
     }
-    public String screenshot(WebDriver driver) throws IOException {
-        File scrfile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        File Destinationfile=new File("src/../images"+System.currentTimeMillis()+".png");
-        String absolutepath_screen=Destinationfile.getAbsolutePath();
-        FileUtils.copyFile(scrfile,Destinationfile);
-        return absolutepath_screen;
+    public String takeScreenshot(WebDriver driver,String testName) throws IOException {
+        File scrfile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        //File Destinationfile = new File("src/../images" + System.currentTimeMillis() + ".png");
+        File Destinationfile = new File(System.getProperty("user.dir")+"\\Screenshots\\"+testName+".png");
+        FileUtils.copyFile(scrfile, Destinationfile);
+        return Destinationfile.getAbsolutePath();
     }
 }

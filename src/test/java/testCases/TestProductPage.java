@@ -7,7 +7,7 @@ import pageObjects.ProductPage;
 public class TestProductPage extends BaseEnv {
 
     @Test(priority = 1)
-    public void test_product() throws InterruptedException
+    public void productTest() throws InterruptedException
     {
         driver.get("http://teststore.automationtesting.co.uk/");
         Thread.sleep(2000);

@@ -1,5 +1,6 @@
 package testCases;
 import envPage.BaseEnv;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 public class TestLogin extends BaseEnv {
 
@@ -9,9 +10,10 @@ public class TestLogin extends BaseEnv {
 //        Thread.sleep(2000);
 //    }
     @Test
-    public void PassportTest() throws InterruptedException {
+    public void passportTest() throws InterruptedException {
         driver.get("https://www.epassport.gov.bd/landing");
         Thread.sleep(2000);
+        Assert.assertTrue(false);
     }
 
 }

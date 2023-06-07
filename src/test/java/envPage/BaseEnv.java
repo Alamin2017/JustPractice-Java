@@ -15,15 +15,12 @@ public class BaseEnv {
         switch (browser)
         {
             case "Chrome":
-//                WebDriverManager.chromedriver().setup();
                 driver=new ChromeDriver();
                 break;
             case "Edge":
-//                WebDriverManager.edgedriver().setup();
                 driver=new EdgeDriver();
                 break;
             case "ie":
-//                WebDriverManager.iedriver().setup();
                 driver=new InternetExplorerDriver();
                 break;
         }
