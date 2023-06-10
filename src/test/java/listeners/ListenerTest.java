@@ -16,7 +16,6 @@ import org.testng.ITestResult;
 import java.io.File;
 import java.io.IOException;
 import static envPage.BaseEnv.driver;
-
 public class ListenerTest implements ITestListener {
     ExtentSparkReporter htmlReporter;
     ExtentReports reports;
@@ -69,8 +68,7 @@ public class ListenerTest implements ITestListener {
     }
     public String takeScreenshot(WebDriver driver,String testName) throws IOException {
         File scrfile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        //File Destinationfile = new File("src/../images" + System.currentTimeMillis() + ".png");
-        File Destinationfile = new File(System.getProperty("user.dir")+"\\Screenshots\\"+testName+".png");
+        File Destinationfile = new File(System.getProperty("user.dir")+"\\Fail-Screenshots\\"+testName+".png");
         FileUtils.copyFile(scrfile, Destinationfile);
         return Destinationfile.getAbsolutePath();
     }
