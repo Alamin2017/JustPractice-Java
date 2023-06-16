@@ -1,3 +1,4 @@
+testCases\BrowserTest.class
 listeners\ListenerTest.class
 pageObjects\LoginPage.class
 utils\ElementActions.class

@@ -1,7 +1,6 @@
 package pageObjects;
 import org.openqa.selenium.By;
 import utils.ElementActions;
-
 public class ProductPage  {
 
     public static By product=By.xpath("//img[@alt='Hummingbird printed t-shirt']");
