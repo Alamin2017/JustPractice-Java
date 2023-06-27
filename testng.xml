@@ -6,9 +6,10 @@
     </listeners>
     <test name="Regression">
         <classes>
-            <class name="testCases.TestProductPage"></class>
+            <class name="testCases.TestProduct"></class>
             <class name="testCases.TestLogin"></class>
             <class name="testCases.BrowserTest"></class>
         </classes>
     </test> <!-- Test -->
-</suite> <!-- Suite -->
+</suite> <!--
+ Suite -->
