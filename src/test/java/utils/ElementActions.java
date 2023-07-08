@@ -5,7 +5,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 import static envPage.BaseEnv.driver;
-
 public class ElementActions  {
 
     public static WebElement getElement(By locator)
@@ -16,7 +15,7 @@ public class ElementActions  {
     }
     public static List<WebElement> getElements(By locator)
     {
-        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(50));
+        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         return driver.findElements(locator);
     }
