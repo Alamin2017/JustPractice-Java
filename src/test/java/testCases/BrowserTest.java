@@ -1,20 +1,13 @@
 package testCases;
 import envPage.BaseEnv;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 public class BrowserTest extends BaseEnv {
     @Test
-    public void pathaoTest() throws InterruptedException {
-        driver.get("https://pathao.com/?lang=en");
-        driver.manage().window().maximize();
-        WebElement element=driver.findElement(By.xpath("//h2[normalize-space()='Earn with your car, bike or bicycle']"));
+    public void GPTest() throws InterruptedException {
+        driver.get("https://www.grameenphone.com/");
         Thread.sleep(2000);
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView(true);", element);
-        System.out.println(element.getText());
+        driver.findElement(By.xpath("//*[@id=\"home-second-section-slider\"]/div[1]/div/div[9]/div/div[1]/a")).click();
         Thread.sleep(2000);
     }
 }
