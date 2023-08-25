@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-03T23:45:09 BDT" name="Command line suite" finished-at="2023-08-03T23:46:06 BDT" duration-ms="57088">
+    <groups>
+    </groups>
+    <test started-at="2023-08-03T23:45:09 BDT" name="Command line test" finished-at="2023-08-03T23:46:06 BDT" duration-ms="57088">
+      <class name="testcases.TestLogin">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TestLogin@56a4479a]" started-at="2023-08-03T23:45:35 BDT" name="setup" finished-at="2023-08-03T23:45:37 BDT" duration-ms="1971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginTest()[pri:0, instance:testcases.TestLogin@56a4479a]" started-at="2023-08-03T23:45:37 BDT" name="LoginTest" finished-at="2023-08-03T23:45:45 BDT" duration-ms="8120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.TestLogin@56a4479a]" started-at="2023-08-03T23:45:45 BDT" name="teardown" finished-at="2023-08-03T23:45:46 BDT" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testcases.TestLogin -->
+      <class name="testcases.MyGPTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.MyGPTest@6f0b0a5e]" started-at="2023-08-03T23:45:09 BDT" name="setup" finished-at="2023-08-03T23:45:13 BDT" duration-ms="3486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="MyGP()[pri:0, instance:testcases.MyGPTest@6f0b0a5e]" started-at="2023-08-03T23:45:13 BDT" name="MyGP" finished-at="2023-08-03T23:45:35 BDT" duration-ms="22374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyGP -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.MyGPTest@6f0b0a5e]" started-at="2023-08-03T23:45:35 BDT" name="teardown" finished-at="2023-08-03T23:45:35 BDT" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testcases.MyGPTest -->
+      <class name="testcases.TestProduct">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TestProduct@62163b39]" started-at="2023-08-03T23:45:46 BDT" name="setup" finished-at="2023-08-03T23:45:47 BDT" duration-ms="1756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="productTest()[pri:1, instance:testcases.TestProduct@62163b39]" started-at="2023-08-03T23:45:47 BDT" name="productTest" finished-at="2023-08-03T23:46:06 BDT" duration-ms="18761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.TestProduct@62163b39]" started-at="2023-08-03T23:46:06 BDT" name="teardown" finished-at="2023-08-03T23:46:06 BDT" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testcases.TestProduct -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
