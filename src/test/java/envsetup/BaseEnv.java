@@ -1,5 +1,6 @@
 package envsetup;
-import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -9,11 +10,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
-
 public class BaseEnv {
     public static WebDriver driver;
     public static String browser = "chrome";
+    public static Logger logger = LogManager.getLogger("JustPractice");
     @BeforeMethod
     public void setup() {
 
@@ -21,7 +21,6 @@ public class BaseEnv {
             case "chrome":
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--disable-notifications");
-                WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver(options);
                 break;
             case "edge":

@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="listener.ListenerTest"></listener>
     </listeners>
-    <test name="Regression">
+    <test name="Web Browser Test">
         <classes>
             <class name="testcases.TestProduct"></class>
             <class name="testcases.TestLogin"></class>

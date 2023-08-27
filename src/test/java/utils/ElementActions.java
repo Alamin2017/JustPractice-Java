@@ -12,13 +12,18 @@ public class ElementActions {
             wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         }
         catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Locator not found within 20 seconds");
         }
         return driver.findElement(locator);
     }
     public static List<WebElement> getElements(By locator) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        try{
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+            wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        }
+        catch (Exception e){
+            System.out.println("Locators not found within 20 seconds");
+        }
         return driver.findElements(locator);
     }
     public static void clickElement(By locator) throws InterruptedException {

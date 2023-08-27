@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 58.757 sec
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 26.542 sec <<< FAILURE!
+productTest(testcases.TestProduct)  Time elapsed: 10.589 sec  <<< FAILURE!
+java.lang.AssertionError: expected [HUMMINGBIRD PRINTED T-SHIR] but found [HUMMINGBIRD PRINTED T-SHIRT]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at testcases.TestProduct.productTest(TestProduct.java:15)
+

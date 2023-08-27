@@ -4,5 +4,4 @@ pageobject\LoginPage.class
 testcases\TestProduct.class
 utils\ElementActions.class
 envsetup\BaseEnv.class
-testcases\MyGPTest.class
 testcases\TestLogin.class

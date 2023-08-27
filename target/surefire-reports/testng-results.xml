@@ -1,49 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-03T23:45:09 BDT" name="Command line suite" finished-at="2023-08-03T23:46:06 BDT" duration-ms="57088">
+  <suite started-at="2023-08-26T19:56:51 BDT" name="Command line suite" finished-at="2023-08-26T19:57:16 BDT" duration-ms="24936">
     <groups>
     </groups>
-    <test started-at="2023-08-03T23:45:09 BDT" name="Command line test" finished-at="2023-08-03T23:46:06 BDT" duration-ms="57088">
+    <test started-at="2023-08-26T19:56:51 BDT" name="Command line test" finished-at="2023-08-26T19:57:16 BDT" duration-ms="24936">
       <class name="testcases.TestLogin">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TestLogin@56a4479a]" started-at="2023-08-03T23:45:35 BDT" name="setup" finished-at="2023-08-03T23:45:37 BDT" duration-ms="1971" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TestLogin@7516e4e5]" started-at="2023-08-26T19:56:51 BDT" name="setup" finished-at="2023-08-26T19:56:54 BDT" duration-ms="2725" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginTest()[pri:0, instance:testcases.TestLogin@56a4479a]" started-at="2023-08-03T23:45:37 BDT" name="LoginTest" finished-at="2023-08-03T23:45:45 BDT" duration-ms="8120" status="PASS">
+        <test-method signature="LoginTest()[pri:0, instance:testcases.TestLogin@7516e4e5]" started-at="2023-08-26T19:56:54 BDT" name="LoginTest" finished-at="2023-08-26T19:57:03 BDT" duration-ms="8828" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.TestLogin@56a4479a]" started-at="2023-08-03T23:45:45 BDT" name="teardown" finished-at="2023-08-03T23:45:46 BDT" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.TestLogin@7516e4e5]" started-at="2023-08-26T19:57:03 BDT" name="teardown" finished-at="2023-08-26T19:57:03 BDT" duration-ms="191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testcases.TestLogin -->
-      <class name="testcases.MyGPTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.MyGPTest@6f0b0a5e]" started-at="2023-08-03T23:45:09 BDT" name="setup" finished-at="2023-08-03T23:45:13 BDT" duration-ms="3486" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="MyGP()[pri:0, instance:testcases.MyGPTest@6f0b0a5e]" started-at="2023-08-03T23:45:13 BDT" name="MyGP" finished-at="2023-08-03T23:45:35 BDT" duration-ms="22374" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MyGP -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.MyGPTest@6f0b0a5e]" started-at="2023-08-03T23:45:35 BDT" name="teardown" finished-at="2023-08-03T23:45:35 BDT" duration-ms="153" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testcases.MyGPTest -->
       <class name="testcases.TestProduct">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TestProduct@62163b39]" started-at="2023-08-03T23:45:46 BDT" name="setup" finished-at="2023-08-03T23:45:47 BDT" duration-ms="1756" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TestProduct@674658f7]" started-at="2023-08-26T19:57:03 BDT" name="setup" finished-at="2023-08-26T19:57:05 BDT" duration-ms="2247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="productTest()[pri:1, instance:testcases.TestProduct@62163b39]" started-at="2023-08-03T23:45:47 BDT" name="productTest" finished-at="2023-08-03T23:46:06 BDT" duration-ms="18761" status="PASS">
+        <test-method signature="productTest()[pri:1, instance:testcases.TestProduct@674658f7]" started-at="2023-08-26T19:57:05 BDT" name="productTest" finished-at="2023-08-26T19:57:16 BDT" duration-ms="10580" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [HUMMINGBIRD PRINTED T-SHIR] but found [HUMMINGBIRD PRINTED T-SHIRT]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [HUMMINGBIRD PRINTED T-SHIR] but found [HUMMINGBIRD PRINTED T-SHIRT]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.TestProduct.productTest(TestProduct.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.TestProduct@62163b39]" started-at="2023-08-03T23:46:06 BDT" name="teardown" finished-at="2023-08-03T23:46:06 BDT" duration-ms="128" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.TestProduct@674658f7]" started-at="2023-08-26T19:57:16 BDT" name="teardown" finished-at="2023-08-26T19:57:16 BDT" duration-ms="136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
