@@ -1,6 +1,4 @@
 package envsetup;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -13,7 +11,6 @@ import org.testng.annotations.BeforeMethod;
 public class BaseEnv {
     public static WebDriver driver;
     public static String browser = "chrome";
-    public static Logger logger = LogManager.getLogger("JustPractice");
     @BeforeMethod
     public void setup() {
 
@@ -34,6 +31,7 @@ public class BaseEnv {
                 driver = new FirefoxDriver(options2);
                 break;
         }
+
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
     }
