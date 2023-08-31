@@ -31,7 +31,6 @@ public class BaseEnv {
                 driver = new FirefoxDriver(options2);
                 break;
         }
-
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
     }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listener.ListenerTest"/>
+  </listeners>
+  <test thread-count="5" name="C:/Users/hp/IdeaProjects/JustPractice(failed)">
+    <classes>
+      <class name="testcases.TestProduct">
+        <methods>
+          <include name="product_test"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testcases.TestProduct -->
+    </classes>
+  </test> <!-- C:/Users/hp/IdeaProjects/JustPractice(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
