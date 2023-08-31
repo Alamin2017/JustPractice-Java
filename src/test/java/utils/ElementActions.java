@@ -35,6 +35,7 @@ public class ElementActions {
         return getElement(locator).getText();
     }
     public static void doEnterValue(By locator, String value) throws InterruptedException {
+        Thread.sleep(1000);
         getElement(locator).clear();
         Thread.sleep(1000);
         getElement(locator).sendKeys(value);
