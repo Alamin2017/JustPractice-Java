@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @Builder
 @Getter
-public class DataFormat {
+public class DataVariable {
     private String email;
     private String password;
 }

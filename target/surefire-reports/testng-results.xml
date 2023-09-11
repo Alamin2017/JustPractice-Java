@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-30T21:56:51 BDT" name="Command line suite" finished-at="2023-08-30T21:57:24 BDT" duration-ms="32467">
+  <suite started-at="2023-09-06T19:27:06 BDT" name="Command line suite" finished-at="2023-09-06T19:27:39 BDT" duration-ms="32614">
     <groups>
     </groups>
-    <test started-at="2023-08-30T21:56:51 BDT" name="Command line test" finished-at="2023-08-30T21:57:24 BDT" duration-ms="32467">
+    <test started-at="2023-09-06T19:27:06 BDT" name="Command line test" finished-at="2023-09-06T19:27:39 BDT" duration-ms="32614">
       <class name="testcases.TestLogin">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TestLogin@320de594]" started-at="2023-08-30T21:56:51 BDT" name="setup" finished-at="2023-08-30T21:56:54 BDT" duration-ms="2938" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TestLogin@320de594]" started-at="2023-09-06T19:27:06 BDT" name="setup" finished-at="2023-09-06T19:27:11 BDT" duration-ms="4333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginTest()[pri:0, instance:testcases.TestLogin@320de594]" started-at="2023-08-30T21:56:54 BDT" name="LoginTest" finished-at="2023-08-30T21:57:08 BDT" duration-ms="14176" status="PASS">
+        <test-method signature="LoginTest()[pri:0, instance:testcases.TestLogin@320de594]" started-at="2023-09-06T19:27:11 BDT" name="LoginTest" finished-at="2023-09-06T19:27:25 BDT" duration-ms="14021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.TestLogin@320de594]" started-at="2023-08-30T21:57:08 BDT" name="teardown" finished-at="2023-08-30T21:57:09 BDT" duration-ms="150" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.TestLogin@320de594]" started-at="2023-09-06T19:27:25 BDT" name="teardown" finished-at="2023-09-06T19:27:25 BDT" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testcases.TestLogin -->
       <class name="testcases.TestProduct">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TestProduct@20a8a64e]" started-at="2023-08-30T21:57:09 BDT" name="setup" finished-at="2023-08-30T21:57:11 BDT" duration-ms="2502" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TestProduct@20a8a64e]" started-at="2023-09-06T19:27:25 BDT" name="setup" finished-at="2023-09-06T19:27:27 BDT" duration-ms="1987" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="product_test()[pri:1, instance:testcases.TestProduct@20a8a64e]" started-at="2023-08-30T21:57:11 BDT" name="product_test" finished-at="2023-08-30T21:57:23 BDT" duration-ms="12314" status="PASS">
+        <test-method signature="product_test()[pri:0, instance:testcases.TestProduct@20a8a64e]" started-at="2023-09-06T19:27:27 BDT" name="product_test" finished-at="2023-09-06T19:27:39 BDT" duration-ms="11644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- product_test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.TestProduct@20a8a64e]" started-at="2023-08-30T21:57:23 BDT" name="teardown" finished-at="2023-08-30T21:57:24 BDT" duration-ms="144" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.TestProduct@20a8a64e]" started-at="2023-09-06T19:27:39 BDT" name="teardown" finished-at="2023-09-06T19:27:39 BDT" duration-ms="136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
