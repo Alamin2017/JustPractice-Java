@@ -1,11 +1,12 @@
 testdata\DataVariable.class
 listener\Retry.class
+pageobject\ProductPage.class
+testcases\TestProduct.class
+utils\ElementActions.class
+testdata\LoginData.class
+testcases\TestLogin.class
 testdata\DataVariable$DataVariableBuilder.class
 listener\ListenerTest.class
 testdata\DataBuilder.class
-pageobject\ProductPage.class
 pageobject\LoginPage.class
-testcases\TestProduct.class
-utils\ElementActions.class
 envsetup\BaseEnv.class
-testcases\TestLogin.class
